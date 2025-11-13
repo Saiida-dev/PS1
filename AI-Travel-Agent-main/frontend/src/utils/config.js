@@ -1,0 +1,1 @@
+export const BASE_URL = "http://localhost:4000/api/v1";  // ou l'URL de ton serveur backend

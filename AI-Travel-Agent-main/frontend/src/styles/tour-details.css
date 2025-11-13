@@ -1,0 +1,230 @@
+/* ======= GENERAL ======= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* ======= IMAGE & INFO CONTAINER ======= */
+  .tour__content img {
+    width: 100%;
+    border-radius: 0.7rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(10, 61, 98, 0.2);
+  }
+  
+  .tour__info {
+    border-radius: 0.7rem;
+    border: 1px solid #dee2e6;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 6px 20px rgba(10, 61, 98, 0.1);
+  }
+  
+  /* ======= HEADER ======= */
+  .tour__info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+    color: #0a3d62;
+    font-weight: 600;
+  }
+  
+  .tour__rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    color: #f8c291;
+  }
+  
+  .tour__rating i {
+    color: #f8c291;
+  }
+  
+  .tour__extra-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    margin: 1.8rem 0;
+  }
+  
+  .tour__extra-details span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #0a3d62;
+    font-weight: 500;
+  }
+  
+  .tour__extra-details i {
+    color: #0a3d62;
+  }
+  
+  /* ======= DESCRIPTION ======= */
+  .tour__info h5 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #0a3d62;
+    font-weight: 600;
+  }
+  
+  .tour__info p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+  }
+  
+  /* ======= REVIEWS ======= */
+  .tour__reviews {
+    margin-top: 3rem;
+  }
+  
+  .tour__reviews h4 {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: #0a3d62;
+    font-weight: 600;
+  }
+  
+  .rating__group {
+    display: flex;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    color: #0a3d62;
+    font-size: 1rem;
+  }
+  
+  .rating__group span {
+    cursor: pointer;
+    padding: 0.4rem;
+    transition: transform 0.2s ease;
+  }
+  
+  .rating__group span:hover {
+    transform: scale(1.2);
+  }
+  
+  /* ======= INPUT ======= */
+  .review__input {
+    display: flex;
+    border: 1px solid #0a3d62;
+    border-radius: 2rem;
+    padding: 0.7rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+  }
+  
+  .review__input input {
+    flex: 1;
+    border: none;
+    padding: 0 1rem;
+    background: transparent;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  
+  .review__input button {
+    background: #0a3d62;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .review__input button:hover {
+    background: #07416e;
+  }
+  
+  /* ======= USER REVIEWS ======= */
+  .user__reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .review__item {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 0.8rem;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #dbe3ea;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(10, 61, 98, 0.1);
+  }
+  
+  .review__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  
+  .review__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .review__username {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #0a3d62;
+  }
+  
+  .review__date {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+  
+  .review__rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .review__title {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .review__stars {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #f8c291;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .review__item {
+      grid-template-columns: 40px 1fr;
+    }
+  
+    .review__stars {
+      justify-self: end;
+    }
+  
+    .tour__extra-details {
+      flex-wrap: wrap;
+      row-gap: 1rem;
+    }
+  
+    .tour__extra-details span {
+      font-size: 0.9rem;
+    }
+  
+    .tour__extra-details span i {
+      font-size: 1rem;
+    }
+  }
+  
